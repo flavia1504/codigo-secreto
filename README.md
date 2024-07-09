@@ -1,8 +1,6 @@
 <h1>Encriptador-Alura</h1>
 <p>🧑🏻‍💻 Encriptador de texto para compartir mensajes secretos.</p>
 
-<h2>Acceso al proyecto mediante QR:</h2>
-
 <h2>Las "llaves" de encriptación que utilizaremos son las siguientes:</h2>
 <ul>
   <li>🔐La letra "e" es convertida para "enter"</li>
@@ -24,8 +22,8 @@
   <li>🐈"gato" => "gaitober"</li>
   <li>🐈‍⬛ gaitober" => "gato"</li>
 </ul>
+<!--mensaje secreto-->
 
-  <h3>UNENCRYPTION BUTTON TEST:</h3>
         simes enterstenter tenterxober senter traidufarcenter entersober simesgnimesfimescai qufarenter enterl probergraimai senter enterjentercufartai denter mainenterrai coberrrenterctai
 
 <h2>Tecnologias Utilizadas:</h2>
@@ -36,4 +34,4 @@
 </ul>
 
 
-# codigo-secreto
+

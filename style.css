@@ -3,7 +3,7 @@
     --background-color-footer-nav: rgba(34, 34, 34, 0.8);
     --container-background: rgba(34, 34, 34, 0.5);
     --textarea-background: rgba(34, 34, 34, 0.5);
-    --text-color: #ffffff;
+    --text-color: #F0EEEE;
     --text-lightblue: #38B6FF;
     --btn-color: rgb(37, 36, 116);
 }
@@ -15,7 +15,7 @@
 }
 
 .fade-in {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s ease-in;
 }
 
@@ -52,10 +52,6 @@ body.fade-in {
     background-color: var(--background-color-footer-nav);
 }
 
-.img-logo {
-    width: 20%;
-    height: 20%;
-}
 
 .nav-links {
     display: flex;
@@ -223,7 +219,7 @@ div.div-description {
     flex-direction: column;
 }
 
-strong.strong-josedev {
+strong.strong-fla {
     color: var(--text-lightblue);
     font-weight: bold;
 }
@@ -327,9 +323,6 @@ strong.strong-josedev {
         width: 100%;
     }
 
-    .img-logo {
-        width: 100px;
-    }
 }
 
 @media (max-width: 498px) {

@@ -57,7 +57,7 @@ function handleTransformation(type) {
         Swal.fire({
             icon: "error",
             title: "Something went wrong!",
-            footer: 'Only letters from a to z and spaces are accepted',
+            footer: 'Only letters from A to Z and spaces are accepted',
             background: '#15415F',
             color: 'white',
             heightAuto: false

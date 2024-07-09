@@ -14,10 +14,8 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <div class="nav-container">
-                <a class="navbar-brand" href="index.html">
-                   
-                </a>
+            <div>
+              
                 <ul class="nav-links">
                     <li><a id="nav-home" href="index.html">HOME</a></li>
                     <li><a id="nav-about" href="about.html">ABOUT ME</a></li>
@@ -26,31 +24,31 @@
         </nav>
     </header>
     <main>
-        <h1 class="title">Encriptador</h1>
+        <h1 class="title">Encryptor</h1>
         <section class="main-section">
             <div class="container-left">
                 <h2 class="subtitle">Secret Code</h2>
                 <textarea style="resize: none;" name="textarea-code" id="area-origin" 
-                    onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toLowerCase()" placeholder="Only letters from a to z and spaces will be allowed"></textarea>
+                    onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toLowerCase()" placeholder="Only letters from A to Z and spaces will be allowed"></textarea>
                 <div class="div-btn">
-                    <input type="button" class="btn" id="btn-encode" value="ENCRIPTAR" onclick="encrypt()">
-                    <input type="button" class="btn" id="btn-decode" value="DESENCRIPTAR" onclick="decrypt()">
+                    <input type="button" class="btn" id="btn-encode" value="ENCRYPT" onclick="encrypt()">
+                    <input type="button" class="btn" id="btn-decode" value="DECRYPT" onclick="decrypt()">
                 </div>
             </div>
             <div class="container-right">
                 <h2 class="subtitle"><div class="loader"></div></h2>
-                <textarea style="resize: none;" readonly name="textarea-decode" id="Challenge"></textarea>
+                <textarea style="resize: none;" readonly name="textarea-decode" id="area-final"></textarea>
                 <div class="div-btn">
-                    <input type="button" class="btn" id="btn-copy" value="COPIAR" onclick="copyText()">
-                    <input type="button" class="btn" id="btn-clean" value="BORRAR" onclick="clearText()">
+                    <input type="button" class="btn" id="btn-copy" value="COPY" onclick="copyText()">
+                    <input type="button" class="btn" id="btn-clean" value="CLEAR" onclick="clearText()">
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <p class="footer-paragraph">&copy; Designed by  <strong class=" Flavia Fernandez">Flavia</strong>
+        <p class="footer-paragraph">&copy; Designed by  <strong class="strong-fla">Flavia</strong>.  All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
