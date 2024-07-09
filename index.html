@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor Challenge</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <a class="navbar-brand" href="index.html">
+                   
+                </a>
+                <ul class="nav-links">
+                    <li><a id="nav-home" href="index.html">HOME</a></li>
+                    <li><a id="nav-about" href="about.html">ABOUT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title">Encriptador</h1>
+        <section class="main-section">
+            <div class="container-left">
+                <h2 class="subtitle">Secret Code</h2>
+                <textarea style="resize: none;" name="textarea-code" id="area-origin" 
+                    onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toLowerCase()" placeholder="Only letters from a to z and spaces will be allowed"></textarea>
+                <div class="div-btn">
+                    <input type="button" class="btn" id="btn-encode" value="ENCRIPTAR" onclick="encrypt()">
+                    <input type="button" class="btn" id="btn-decode" value="DESENCRIPTAR" onclick="decrypt()">
+                </div>
+            </div>
+            <div class="container-right">
+                <h2 class="subtitle"><div class="loader"></div></h2>
+                <textarea style="resize: none;" readonly name="textarea-decode" id="Challenge"></textarea>
+                <div class="div-btn">
+                    <input type="button" class="btn" id="btn-copy" value="COPIAR" onclick="copyText()">
+                    <input type="button" class="btn" id="btn-clean" value="BORRAR" onclick="clearText()">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-paragraph">&copy; Designed by  <strong class=" Flavia Fernandez">Flavia</strong>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
